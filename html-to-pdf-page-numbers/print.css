@@ -1,0 +1,5 @@
+/* Print CSS from the guide: keep headings with their text, never split a row or the total. */
+h1, h2 { break-after: avoid; }          /* keep a heading with its text */
+tr, .total { break-inside: avoid; }     /* never split a row or the total */
+.new-page { break-before: page; }       /* force a break */
+p { orphans: 3; widows: 3; }
