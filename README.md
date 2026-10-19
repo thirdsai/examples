@@ -52,5 +52,6 @@ Questions or a broken example? Open an issue on this repo.
 - [HTML to PDF from PHP or Laravel with only ext-curl: page numbers, header and footer, no dompdf or wkhtmltopdf](https://gist.github.com/thirdsai/974a8bce5b106563cfad5b881261f0c2)
 - [Invoice PDFs in Go with html/template and only the standard library: no cgo, no Chrome, safe to re-run](https://gist.github.com/thirdsai/d9f1d502a94719d1aff086488454f570)
 - [HTML to PDF in Java or Spring Boot with only java.net.http: page numbers, header and footer, no iText or Flying Saucer](https://gist.github.com/thirdsai/f13477de72a37c79ef27080498624437)
+- [Stripe Checkout receipt PDFs from a verified webhook in Node, no npm packages, safe on Stripe retries](https://gist.github.com/thirdsai/106f2ef1536c82a3e3b2a5e97d6b9be6)
 
 (Disclosure: I'm connected to thirds.ai.)
