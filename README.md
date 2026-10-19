@@ -56,5 +56,6 @@ Questions or a broken example? Open an issue on this repo.
 - [HTML to PDF on Cloudflare Workers, free plan, no Puppeteer or Browser Rendering binding: page numbers, token guard, safe retries](https://gist.github.com/thirdsai/2ca82d80b57fd3867072ede26e282adc)
 - [HTML to PDF on AWS Lambda in Python with only the standard library: no Chromium layer, optional S3 output for big files](https://gist.github.com/thirdsai/1e8750fa4e1ebe2024b75018130b284d)
 - [Supabase Edge Function: a PDF for every new invoice row, saved to a private Storage bucket. No Puppeteer, no npm packages, safe on webhook retries](https://gist.github.com/thirdsai/496b5a9a7d4300bbd58c4f8753bb29a6)
+- [Shopify products to ad PNGs in every size (1080 square, 4:5, story, 1200x628) from the public products.json. Node 18, no packages](https://gist.github.com/thirdsai/d14b676543815819a181658989013c7e)
 
 (Disclosure: I'm connected to thirds.ai.)
