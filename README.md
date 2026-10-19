@@ -29,4 +29,25 @@ If an invoice or report looks right in the browser but splits a table row across
 
 Questions or a broken example? Open an issue on this repo.
 
+## More examples
+
+- [Page numbers, a header and clean page breaks in an HTML to PDF export: print CSS plus one thirds.ai API request](https://gist.github.com/thirdsai/621b60696b517bc0ef1baf8fb2c1a2db)
+- [Make one certificate PDF per row of a CSV (learner, course, date) with the thirds.ai API. Python standard library only, safe to re-run](https://gist.github.com/thirdsai/8d625784ed204b719c0c856221788a2e)
+- [n8n workflow: email a PDF certificate for each new Google Sheets row, using HTTP Request nodes and the thirds.ai API](https://gist.github.com/thirdsai/fc75c468233df20ad1bee3d6966bd016)
+- [Build-time Open Graph images: one 1200x630 PNG per blog post from a single design, skipped when the PNG already exists. Node 20+, no dependencies](https://gist.github.com/thirdsai/2ac4be0f25843f341dcedd442b9b474d)
+- [Make blueprint: a branded donation receipt PDF for every Stripe gift, via the HTTP app and the thirds.ai API](https://gist.github.com/thirdsai/249ba8d95ce76be8eb256a2f4dada28d)
+- [Batch ad images: one design, one row per product, a ZIP of PNGs in three sizes each, via thirds.ai image packs](https://gist.github.com/thirdsai/b3227e494d2fbbd53a017ca35703d527)
+- [Airtable scripting extension: turn each invoice record into a branded PDF and attach it to the record](https://gist.github.com/thirdsai/a282f61b85f1067f6b6aa70db825df0a)
+- [Google Sheets + Apps Script: make a PDF certificate for each learner row, save it to Drive and email it](https://gist.github.com/thirdsai/13d3b5f3a19bd6c375518c378461ac39)
+- [Zapier recipe: turn an order-paid webhook into a PDF receipt with line items, tax and a Paid stamp. Includes a curl test with a mocked payload](https://gist.github.com/thirdsai/ac3d5053c1c02c0adfb8afe183824c8c)
+- [Next.js App Router: an API route that turns server-built invoice HTML into a PDF with thirds.ai, plus a download button component](https://gist.github.com/thirdsai/3172d9f83bd21bdf29f89d298567c7b0)
+- [QR code labels for every row of a CSV, as a print ready A4 PDF (21 per sheet). Node 18+, QR codes drawn locally as SVG](https://gist.github.com/thirdsai/3a85e2063cf79d936aee67bdf07017b9)
+- [HTML to PDF in C# with HttpClient: A4, header, Page X of Y footer, CSS page breaks. No NuGet packages](https://gist.github.com/thirdsai/f8a22f7fc3161fb9f1740c8affcd119a)
+- [HTML to PDF from Ruby or Rails with only Net::HTTP. A wkhtmltopdf replacement with page numbers and safe retries](https://gist.github.com/thirdsai/a027969ec1e31fe05709a30937e69701)
+- [Save a copied or exported ChatGPT conversation as a clean PDF: tables, lists and code blocks intact](https://gist.github.com/thirdsai/df091fb7dc57c5717e79d4a6ccb0e18f)
+- [SVG to PNG at any size with a transparent background, rendered by a browser engine (fonts, CSS, foreignObject)](https://gist.github.com/thirdsai/b13895495eed3c5bcebae91ee58f25e8)
+- [Node-RED flow: chart data to a PNG with core nodes only, no Chromium on the device](https://gist.github.com/thirdsai/2c322f663b57c244c28770baa231ca22)
+- [Django: render a template to HTML and get a PDF back from an API, no wkhtmltopdf or WeasyPrint install](https://gist.github.com/thirdsai/7b1689b9c3539504ef60572ab67dd4dd)
+- [Google Sheets Apps Script: one row of ad copy becomes PNGs in every ad size](https://gist.github.com/thirdsai/96e929c00d9b4b280fe5b10f5227045a)
+
 (Disclosure: I'm connected to thirds.ai.)
