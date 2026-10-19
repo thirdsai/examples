@@ -1,0 +1,736 @@
+{
+    "name": "Send a branded donation receipt PDF for every Stripe or Tally gift",
+    "flow": [
+        {
+            "id": 1,
+            "module": "gateway:CustomWebHook",
+            "version": 1,
+            "parameters": {
+                "hook": null,
+                "maxResults": 1
+            },
+            "mapper": {},
+            "metadata": {
+                "designer": {
+                    "x": 0,
+                    "y": 0
+                },
+                "setupValidation": {
+                    "version": 1,
+                    "configuration": "5c7f4e2155b07d52",
+                    "result": {
+                        "valid": true,
+                        "fields": []
+                    }
+                },
+                "restore": {
+                    "parameters": {
+                        "hook": {
+                            "label": "Add your own webhook",
+                            "data": {}
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "hook",
+                        "type": "hook:gateway-webhook",
+                        "label": "Webhook",
+                        "required": true
+                    },
+                    {
+                        "name": "maxResults",
+                        "type": "number",
+                        "label": "Maximum number of results"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "module": "util:SetVariables",
+            "version": 1,
+            "parameters": {},
+            "mapper": {
+                "variables": [
+                    {
+                        "name": "donor_name",
+                        "value": "{{1.data.object.customer_details.name}}"
+                    },
+                    {
+                        "name": "donor_email",
+                        "value": "{{1.data.object.customer_details.email}}"
+                    },
+                    {
+                        "name": "amount",
+                        "value": "{{1.data.object.amount_total / 100}}"
+                    },
+                    {
+                        "name": "received_on",
+                        "value": "{{formatDate(parseDate(1.data.object.created; \"X\"); \"YYYY-MM-DD\")}}"
+                    },
+                    {
+                        "name": "receipt_number",
+                        "value": "GIFT-{{1.data.object.payment_intent}}"
+                    }
+                ],
+                "scope": "roundtrip"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 300,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "id": 3,
+            "module": "http:ActionSendDataAPIKeyAuth",
+            "version": 3,
+            "parameters": {
+                "auth": null,
+                "handleErrors": true,
+                "useNewZLibDeCompress": true
+            },
+            "mapper": {
+                "url": "https://thirds.ai/v1/pdf",
+                "serializeUrl": false,
+                "method": "post",
+                "headers": [
+                    {
+                        "name": "Idempotency-Key",
+                        "value": "receipt-{{2.receipt_number}}"
+                    }
+                ],
+                "qs": [],
+                "bodyType": "raw",
+                "parseResponse": true,
+                "timeout": "",
+                "shareCookies": false,
+                "ca": "",
+                "rejectUnauthorized": true,
+                "followRedirect": true,
+                "useQuerystring": false,
+                "gzip": true,
+                "useMtls": false,
+                "contentType": "application/json",
+                "data": "{\n  \"template_id\": \"tpl_PASTE_YOUR_TEMPLATE_ID\",\n  \"data\": {\n    \"nonprofit_name\": \"YOUR CHARITY NAME\",\n    \"nonprofit_address\": \"YOUR CHARITY ADDRESS\",\n    \"donor_name\": \"{{2.donor_name}}\",\n    \"donor_email\": \"{{2.donor_email}}\",\n    \"receipt_number\": \"{{2.receipt_number}}\",\n    \"received_on\": \"{{2.received_on}}\",\n    \"amount\": {{2.amount}},\n    \"amount_note\": \"One-off gift by card\",\n    \"designation\": \"The community workshop fund\",\n    \"message\": \"Thank you for helping us keep a warm, open place where people can learn, make things and share their work.\",\n    \"tax_statement\": \"No goods or services were given in exchange for this gift.\",\n    \"contact\": \"YOUR CONTACT EMAIL\",\n    \"footer\": \"YOUR CHARITY REGISTRATION LINE\"\n  }\n}",
+                "followAllRedirects": false
+            },
+            "metadata": {
+                "designer": {
+                    "x": 600,
+                    "y": 0
+                },
+                "setupValidation": {
+                    "version": 1,
+                    "configuration": "42ba7811a49bf674",
+                    "result": {
+                        "valid": true,
+                        "fields": []
+                    }
+                },
+                "restore": {
+                    "parameters": {
+                        "auth": {
+                            "label": "Choose or add yours",
+                            "data": {}
+                        }
+                    },
+                    "expect": {
+                        "method": {
+                            "mode": "chose",
+                            "label": "POST"
+                        },
+                        "headers": {
+                            "mode": "chose",
+                            "items": [
+                                null
+                            ]
+                        },
+                        "qs": {
+                            "mode": "chose"
+                        },
+                        "bodyType": {
+                            "label": "Raw"
+                        },
+                        "contentType": {
+                            "label": "JSON (application/json)"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "auth",
+                        "type": "keychain:apikeyauth",
+                        "label": "Credentials",
+                        "required": true
+                    },
+                    {
+                        "name": "handleErrors",
+                        "type": "boolean",
+                        "label": "Evaluate all states as errors (except for 2xx and 3xx )",
+                        "required": true
+                    },
+                    {
+                        "name": "useNewZLibDeCompress",
+                        "type": "hidden"
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "url",
+                        "type": "url",
+                        "label": "URL",
+                        "required": true
+                    },
+                    {
+                        "name": "serializeUrl",
+                        "type": "boolean",
+                        "label": "Serialize URL",
+                        "required": true
+                    },
+                    {
+                        "name": "method",
+                        "type": "select",
+                        "label": "Method",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "get",
+                                "head",
+                                "post",
+                                "put",
+                                "patch",
+                                "delete",
+                                "options"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "headers",
+                        "type": "array",
+                        "label": "Headers",
+                        "spec": [
+                            {
+                                "name": "name",
+                                "label": "Name",
+                                "type": "text",
+                                "required": true
+                            },
+                            {
+                                "name": "value",
+                                "label": "Value",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "qs",
+                        "type": "array",
+                        "label": "Query String",
+                        "spec": [
+                            {
+                                "name": "name",
+                                "label": "Name",
+                                "type": "text",
+                                "required": true
+                            },
+                            {
+                                "name": "value",
+                                "label": "Value",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "bodyType",
+                        "type": "select",
+                        "label": "Body type",
+                        "validate": {
+                            "enum": [
+                                "raw",
+                                "x_www_form_urlencoded",
+                                "multipart_form_data"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "parseResponse",
+                        "type": "boolean",
+                        "label": "Parse response",
+                        "required": true
+                    },
+                    {
+                        "name": "timeout",
+                        "type": "uinteger",
+                        "label": "Timeout",
+                        "validate": {
+                            "max": 300,
+                            "min": 1
+                        }
+                    },
+                    {
+                        "name": "shareCookies",
+                        "type": "boolean",
+                        "label": "Share cookies with other HTTP modules",
+                        "required": true
+                    },
+                    {
+                        "name": "ca",
+                        "type": "cert",
+                        "label": "Self-signed certificate"
+                    },
+                    {
+                        "name": "rejectUnauthorized",
+                        "type": "boolean",
+                        "label": "Reject connections that are using unverified (self-signed) certificates",
+                        "required": true
+                    },
+                    {
+                        "name": "followRedirect",
+                        "type": "boolean",
+                        "label": "Follow redirect",
+                        "required": true
+                    },
+                    {
+                        "name": "useQuerystring",
+                        "type": "boolean",
+                        "label": "Disable serialization of multiple same query string keys as arrays",
+                        "required": true
+                    },
+                    {
+                        "name": "gzip",
+                        "type": "boolean",
+                        "label": "Request compressed content",
+                        "required": true
+                    },
+                    {
+                        "name": "useMtls",
+                        "type": "boolean",
+                        "label": "Use Mutual TLS",
+                        "required": true
+                    },
+                    {
+                        "name": "contentType",
+                        "type": "select",
+                        "label": "Content type",
+                        "validate": {
+                            "enum": [
+                                "text/plain",
+                                "application/json",
+                                "application/xml",
+                                "text/xml",
+                                "text/html",
+                                "custom"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "data",
+                        "type": "buffer",
+                        "label": "Request content"
+                    },
+                    {
+                        "name": "followAllRedirects",
+                        "type": "boolean",
+                        "label": "Follow all redirect",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "module": "builtin:BasicRouter",
+            "version": 1,
+            "mapper": null,
+            "metadata": {
+                "designer": {
+                    "x": 900,
+                    "y": 0
+                }
+            },
+            "routes": [
+                {
+                    "flow": [
+                        {
+                            "id": 5,
+                            "module": "http:ActionGetFile",
+                            "version": 3,
+                            "parameters": {
+                                "handleErrors": true
+                            },
+                            "filter": {
+                                "name": "PDF ready",
+                                "conditions": [
+                                    [
+                                        {
+                                            "a": "{{3.data.status}}",
+                                            "o": "text:equal",
+                                            "b": "succeeded"
+                                        }
+                                    ]
+                                ]
+                            },
+                            "mapper": {
+                                "url": "https://thirds.ai{{3.data.download.url}}",
+                                "serializeUrl": false,
+                                "method": "get",
+                                "headers": [],
+                                "qs": [],
+                                "shareCookies": false,
+                                "ca": "",
+                                "rejectUnauthorized": true,
+                                "followRedirect": true,
+                                "useQuerystring": false,
+                                "gzip": true,
+                                "useMtls": false,
+                                "followAllRedirects": false
+                            },
+                            "metadata": {
+                                "designer": {
+                                    "x": 1200,
+                                    "y": -150
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "flow": [
+                        {
+                            "id": 6,
+                            "module": "builtin:BasicRepeater",
+                            "version": 1,
+                            "parameters": {},
+                            "filter": {
+                                "name": "Still rendering",
+                                "conditions": [
+                                    [
+                                        {
+                                            "a": "{{3.data.status}}",
+                                            "o": "text:notequal",
+                                            "b": "succeeded"
+                                        }
+                                    ]
+                                ]
+                            },
+                            "mapper": {
+                                "start": "1",
+                                "repeats": "10",
+                                "step": "1"
+                            },
+                            "metadata": {
+                                "designer": {
+                                    "x": 1200,
+                                    "y": 150
+                                }
+                            }
+                        },
+                        {
+                            "id": 7,
+                            "module": "util:FunctionSleep",
+                            "version": 1,
+                            "parameters": {},
+                            "mapper": {
+                                "duration": "3"
+                            },
+                            "metadata": {
+                                "designer": {
+                                    "x": 1500,
+                                    "y": 150
+                                }
+                            }
+                        },
+                        {
+                            "id": 8,
+                            "module": "http:ActionSendDataAPIKeyAuth",
+                            "version": 3,
+                            "parameters": {
+                                "auth": null,
+                                "handleErrors": true,
+                                "useNewZLibDeCompress": true
+                            },
+                            "mapper": {
+                                "url": "https://thirds.ai/v1/pdf/{{3.data.id}}",
+                                "serializeUrl": false,
+                                "method": "get",
+                                "headers": [],
+                                "qs": [],
+                                "bodyType": "",
+                                "parseResponse": true,
+                                "timeout": "",
+                                "shareCookies": false,
+                                "ca": "",
+                                "rejectUnauthorized": true,
+                                "followRedirect": true,
+                                "useQuerystring": false,
+                                "gzip": true,
+                                "useMtls": false,
+                                "followAllRedirects": false
+                            },
+                            "metadata": {
+                                "designer": {
+                                    "x": 1800,
+                                    "y": 150
+                                },
+                                "setupValidation": {
+                                    "version": 1,
+                                    "configuration": "1ef00a432723806d",
+                                    "result": {
+                                        "valid": true,
+                                        "fields": []
+                                    }
+                                },
+                                "restore": {
+                                    "parameters": {
+                                        "auth": {
+                                            "label": "Choose or add yours",
+                                            "data": {}
+                                        }
+                                    },
+                                    "expect": {
+                                        "method": {
+                                            "mode": "chose",
+                                            "label": "GET"
+                                        },
+                                        "headers": {
+                                            "mode": "chose"
+                                        },
+                                        "qs": {
+                                            "mode": "chose"
+                                        },
+                                        "bodyType": {
+                                            "label": "Empty"
+                                        }
+                                    }
+                                },
+                                "parameters": [
+                                    {
+                                        "name": "auth",
+                                        "type": "keychain:apikeyauth",
+                                        "label": "Credentials",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "handleErrors",
+                                        "type": "boolean",
+                                        "label": "Evaluate all states as errors (except for 2xx and 3xx )",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "useNewZLibDeCompress",
+                                        "type": "hidden"
+                                    }
+                                ],
+                                "expect": [
+                                    {
+                                        "name": "url",
+                                        "type": "url",
+                                        "label": "URL",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "serializeUrl",
+                                        "type": "boolean",
+                                        "label": "Serialize URL",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "method",
+                                        "type": "select",
+                                        "label": "Method",
+                                        "required": true,
+                                        "validate": {
+                                            "enum": [
+                                                "get",
+                                                "head",
+                                                "post",
+                                                "put",
+                                                "patch",
+                                                "delete",
+                                                "options"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "headers",
+                                        "type": "array",
+                                        "label": "Headers",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "label": "Name",
+                                                "type": "text",
+                                                "required": true
+                                            },
+                                            {
+                                                "name": "value",
+                                                "label": "Value",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "qs",
+                                        "type": "array",
+                                        "label": "Query String",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "label": "Name",
+                                                "type": "text",
+                                                "required": true
+                                            },
+                                            {
+                                                "name": "value",
+                                                "label": "Value",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "bodyType",
+                                        "type": "select",
+                                        "label": "Body type",
+                                        "validate": {
+                                            "enum": [
+                                                "raw",
+                                                "x_www_form_urlencoded",
+                                                "multipart_form_data"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "parseResponse",
+                                        "type": "boolean",
+                                        "label": "Parse response",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "timeout",
+                                        "type": "uinteger",
+                                        "label": "Timeout",
+                                        "validate": {
+                                            "max": 300,
+                                            "min": 1
+                                        }
+                                    },
+                                    {
+                                        "name": "shareCookies",
+                                        "type": "boolean",
+                                        "label": "Share cookies with other HTTP modules",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "ca",
+                                        "type": "cert",
+                                        "label": "Self-signed certificate"
+                                    },
+                                    {
+                                        "name": "rejectUnauthorized",
+                                        "type": "boolean",
+                                        "label": "Reject connections that are using unverified (self-signed) certificates",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "followRedirect",
+                                        "type": "boolean",
+                                        "label": "Follow redirect",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "useQuerystring",
+                                        "type": "boolean",
+                                        "label": "Disable serialization of multiple same query string keys as arrays",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "gzip",
+                                        "type": "boolean",
+                                        "label": "Request compressed content",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "useMtls",
+                                        "type": "boolean",
+                                        "label": "Use Mutual TLS",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "followAllRedirects",
+                                        "type": "boolean",
+                                        "label": "Follow all redirect",
+                                        "required": true
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 9,
+                            "module": "http:ActionGetFile",
+                            "version": 3,
+                            "parameters": {
+                                "handleErrors": true
+                            },
+                            "filter": {
+                                "name": "PDF ready",
+                                "conditions": [
+                                    [
+                                        {
+                                            "a": "{{8.data.status}}",
+                                            "o": "text:equal",
+                                            "b": "succeeded"
+                                        }
+                                    ]
+                                ]
+                            },
+                            "mapper": {
+                                "url": "https://thirds.ai{{8.data.download.url}}",
+                                "serializeUrl": false,
+                                "method": "get",
+                                "headers": [],
+                                "qs": [],
+                                "shareCookies": false,
+                                "ca": "",
+                                "rejectUnauthorized": true,
+                                "followRedirect": true,
+                                "useQuerystring": false,
+                                "gzip": true,
+                                "useMtls": false,
+                                "followAllRedirects": false
+                            },
+                            "metadata": {
+                                "designer": {
+                                    "x": 2100,
+                                    "y": 150
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "instant": true,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "slots": null,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "notes": []
+    }
+}
