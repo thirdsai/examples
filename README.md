@@ -49,5 +49,7 @@ Questions or a broken example? Open an issue on this repo.
 - [Node-RED flow: chart data to a PNG with core nodes only, no Chromium on the device](https://gist.github.com/thirdsai/2c322f663b57c244c28770baa231ca22)
 - [Django: render a template to HTML and get a PDF back from an API, no wkhtmltopdf or WeasyPrint install](https://gist.github.com/thirdsai/7b1689b9c3539504ef60572ab67dd4dd)
 - [Google Sheets Apps Script: one row of ad copy becomes PNGs in every ad size](https://gist.github.com/thirdsai/96e929c00d9b4b280fe5b10f5227045a)
+- [HTML to PDF from PHP or Laravel with only ext-curl: page numbers, header and footer, no dompdf or wkhtmltopdf](https://gist.github.com/thirdsai/974a8bce5b106563cfad5b881261f0c2)
+- [Invoice PDFs in Go with html/template and only the standard library: no cgo, no Chrome, safe to re-run](https://gist.github.com/thirdsai/d9f1d502a94719d1aff086488454f570)
 
 (Disclosure: I'm connected to thirds.ai.)
