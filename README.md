@@ -93,5 +93,6 @@ Questions or a broken example? Open an issue on this repo.
 - [One Excel worksheet to PDF from Power Automate, with dates as shown and links that still click](https://gist.github.com/thirdsai/2e575e0bcdd20f1a251701586231c8b7)
 - [Power Apps to PDF with every gallery row and the signature, through one flow](https://gist.github.com/thirdsai/f96e7f066e90bb987cc7aca9d8681554)
 - [wkhtmltopdf 0.12.6 "Warning: Blocked access to file": the flag, where it goes, and the safer --allow, measured](https://gist.github.com/thirdsai/172afdaa5fbd99482dab9e7af790094b)
+- [Google Fonts in wkhtmltopdf: which ways of loading the font work, and the silent woff2 fallback, measured](https://gist.github.com/thirdsai/e4b70049feafabe9956a384446e28724)
 
 (Disclosure: I'm connected to thirds.ai.)
