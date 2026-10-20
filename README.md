@@ -89,5 +89,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Microsoft Forms response to PDF in Power Automate, without the file that won't open](https://gist.github.com/thirdsai/057cf63096921cc34e24abc57edffedd)
 - [Outlook email to PDF in SharePoint with Power Automate, inline images included](https://gist.github.com/thirdsai/43079ea2b671c1e46c66f5e486a735bf)
 - [PDF file content in Power Automate: base64, base64ToBinary, and why the attachment is corrupt or blank](https://gist.github.com/thirdsai/bf68e8e1b45ed859b381a4342806b3dc)
+- [50 statements in one PDF from a SQL stored procedure, without merging PDFs in Power Automate](https://gist.github.com/thirdsai/c8980a480c336363287eefb2cdc94cd6)
 
 (Disclosure: I'm connected to thirds.ai.)
