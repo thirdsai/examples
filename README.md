@@ -107,5 +107,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Name badges from a CSV or Excel export as one print ready A4 or Letter PDF: auto grid, names that shrink or wrap, ribbons, cut marks, Python standard library only](https://gist.github.com/thirdsai/41a8a30ec9396812d54fc7eaf9597c63)
 - [Google Sheets Apps Script: a PDF receipt for every paid row, totals in pence, saved to Drive and emailed, never double sent on rerun](https://gist.github.com/thirdsai/328237e68b1d991188150978b54b922b)
 - [mPDF: why a header image covers the body and why a footer shows only on the last page, measured on mPDF 8.3 with the fixes](https://gist.github.com/thirdsai/5f594545da50b78ce977001a7385ab72)
+- [TCPDF writeHTML on 6.11 and 7.0: rows split across pages, nobr on tr vs table, and 11 ways of placing an image, measured](https://gist.github.com/thirdsai/dfa8a454563f0200978b5f0b2878f782)
 
 (Disclosure: I'm connected to thirds.ai.)
