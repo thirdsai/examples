@@ -91,5 +91,6 @@ Questions or a broken example? Open an issue on this repo.
 - [PDF file content in Power Automate: base64, base64ToBinary, and why the attachment is corrupt or blank](https://gist.github.com/thirdsai/bf68e8e1b45ed859b381a4342806b3dc)
 - [50 statements in one PDF from a SQL stored procedure, without merging PDFs in Power Automate](https://gist.github.com/thirdsai/c8980a480c336363287eefb2cdc94cd6)
 - [One Excel worksheet to PDF from Power Automate, with dates as shown and links that still click](https://gist.github.com/thirdsai/2e575e0bcdd20f1a251701586231c8b7)
+- [Power Apps to PDF with every gallery row and the signature, through one flow](https://gist.github.com/thirdsai/f96e7f066e90bb987cc7aca9d8681554)
 
 (Disclosure: I'm connected to thirds.ai.)
