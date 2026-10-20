@@ -92,5 +92,6 @@ Questions or a broken example? Open an issue on this repo.
 - [50 statements in one PDF from a SQL stored procedure, without merging PDFs in Power Automate](https://gist.github.com/thirdsai/c8980a480c336363287eefb2cdc94cd6)
 - [One Excel worksheet to PDF from Power Automate, with dates as shown and links that still click](https://gist.github.com/thirdsai/2e575e0bcdd20f1a251701586231c8b7)
 - [Power Apps to PDF with every gallery row and the signature, through one flow](https://gist.github.com/thirdsai/f96e7f066e90bb987cc7aca9d8681554)
+- [wkhtmltopdf 0.12.6 "Warning: Blocked access to file": the flag, where it goes, and the safer --allow, measured](https://gist.github.com/thirdsai/172afdaa5fbd99482dab9e7af790094b)
 
 (Disclosure: I'm connected to thirds.ai.)
