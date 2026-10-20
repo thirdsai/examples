@@ -108,5 +108,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Google Sheets Apps Script: a PDF receipt for every paid row, totals in pence, saved to Drive and emailed, never double sent on rerun](https://gist.github.com/thirdsai/328237e68b1d991188150978b54b922b)
 - [mPDF: why a header image covers the body and why a footer shows only on the last page, measured on mPDF 8.3 with the fixes](https://gist.github.com/thirdsai/5f594545da50b78ce977001a7385ab72)
 - [TCPDF writeHTML on 6.11 and 7.0: rows split across pages, nobr on tr vs table, and 11 ways of placing an image, measured](https://gist.github.com/thirdsai/dfa8a454563f0200978b5f0b2878f782)
+- [wkhtmltopdf page-break-after doing nothing: 22 break placements on 0.12.6 and which parents swallow the break](https://gist.github.com/thirdsai/745f26573cb667161de172c2435d2e8d)
 
 (Disclosure: I'm connected to thirds.ai.)
