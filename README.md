@@ -114,5 +114,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Puppeteer PDF that opens blank or corrupt: page.pdf() now returns a Uint8Array, Express 4 res.send turns it into JSON, and res.text() on the client, measured](https://gist.github.com/thirdsai/bd154bae4f2fcf0e469a9021bea71d20)
 - [wkhtmltopdf repeated thead overlapping rows: it happens when one row is taller than the page; 10 cases on 0.12.6.1 and the fixes that work](https://gist.github.com/thirdsai/47df8988d393a250ccdf454b303acd9c)
 - [WeasyPrint 70: headers and footers on every page (margin boxes, running elements, page N of M) and @font-face that loads, 18 cases checked](https://gist.github.com/thirdsai/a449561c124c4817a8e05f078d420b76)
+- [Puppeteer on Vercel, Could not find Chrome: why the cache misses the bundle, 701 MB vs 250 MB, and @sparticuz/chromium cold start, measured](https://gist.github.com/thirdsai/edbcba1f62c616f65a0e36038fdbf4f9)
 
 (Disclosure: I'm connected to thirds.ai.)
