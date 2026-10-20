@@ -115,5 +115,6 @@ Questions or a broken example? Open an issue on this repo.
 - [wkhtmltopdf repeated thead overlapping rows: it happens when one row is taller than the page; 10 cases on 0.12.6.1 and the fixes that work](https://gist.github.com/thirdsai/47df8988d393a250ccdf454b303acd9c)
 - [WeasyPrint 70: headers and footers on every page (margin boxes, running elements, page N of M) and @font-face that loads, 18 cases checked](https://gist.github.com/thirdsai/a449561c124c4817a8e05f078d420b76)
 - [Puppeteer on Vercel, Could not find Chrome: why the cache misses the bundle, 701 MB vs 250 MB, and @sparticuz/chromium cold start, measured](https://gist.github.com/thirdsai/edbcba1f62c616f65a0e36038fdbf4f9)
+- [wkhtmltopdf from C# with an HTML string: the stdout deadlock, UTF-8 mojibake and relative images with stdin, 12 cases on .NET 10](https://gist.github.com/thirdsai/de6bdebf2a532b45440a3e7434b81b7d)
 
 (Disclosure: I'm connected to thirds.ai.)
