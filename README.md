@@ -66,5 +66,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Airtable scripting extension: a 1200x630 social card PNG for every record, saved to an attachment field, only changed records rendered again](https://gist.github.com/thirdsai/49b32c331a6b533864199e7cf0b232c7)
 - [Puppeteer in Docker: fix "No usable sandbox!" without --no-sandbox, using a seccomp profile and a non-root user, or ship no browser at all](https://gist.github.com/thirdsai/fdf7a8eb2d305772bfe8389fcb9dd73c)
 - [Puppeteer: wait until a page that loads its data after the load event is really finished before page.pdf(), plus the same page as a PDF from an API](https://gist.github.com/thirdsai/d6613eb3603275b041b9cb3e4ccc13bc)
+- [Puppeteer headerTemplate and footerTemplate: seven traps measured (scripts, missing header, tiny text, page CSS, zero margins, flexbox, images) and a helper that avoids them](https://gist.github.com/thirdsai/d7340585ce2697430d54510d51c709e2)
 
 (Disclosure: I'm connected to thirds.ai.)
