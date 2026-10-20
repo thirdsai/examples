@@ -1,0 +1,30 @@
+identity:
+  author: thirdsai
+  name: thirds
+  label:
+    en_US: thirds.ai
+  description:
+    en_US: Turn HTML into PDF files and PNG, JPEG or WebP images with the thirds.ai API.
+  icon: icon.svg
+  icon_dark: icon-dark.svg
+  tags:
+    - productivity
+    - utilities
+    - image
+credentials_for_provider:
+  api_key:
+    type: secret-input
+    required: true
+    label:
+      en_US: API key
+    placeholder:
+      en_US: Paste your thirds.ai API key
+    help:
+      en_US: Sign in at thirds.ai, verify your email address, then open API keys and create a named key.
+    url: https://thirds.ai/docs/api?utm_source=dify&utm_medium=community&utm_campaign=own-content&utm_content=dify-plugin#authentication
+tools:
+  - tools/html_to_pdf.yaml
+  - tools/html_to_image.yaml
+extra:
+  python:
+    source: provider/thirds.py
