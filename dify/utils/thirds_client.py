@@ -15,7 +15,7 @@ import httpx
 API_BASE = "https://thirds.ai"
 MAX_HTML_BYTES = 5 * 1024 * 1024  # the API limit for the html field
 REQUEST_TIMEOUT = httpx.Timeout(60.0, connect=10.0)
-OVERALL_DEADLINE_SECONDS = 100  # stays below the plugin's 120 second request limit
+OVERALL_DEADLINE_SECONDS = 100  # stop polling an unfinished job after this; below MAX_REQUEST_TIMEOUT=120 set in main.py
 POLL_INTERVAL_SECONDS = 1.5
 
 
