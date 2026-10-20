@@ -100,5 +100,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Rails ActionMailer: attach a generated invoice PDF, and the four ways it goes wrong, measured](https://gist.github.com/thirdsai/70d886efc19cab9fa7e8fc36be349036)
 - [pdfMake from HTML and from data: "Unrecognized document structure", the dynamic table that will not build, and the fix (pdfmake 0.3.12, tested)](https://gist.github.com/thirdsai/19298786c8e31a69dfe8feda006aa560)
 - [pdfMake "Roboto-Regular.ttf not found in virtual file system": script order, bundles, and the 0.3 call that replaces pdfMake.vfs (tested)](https://gist.github.com/thirdsai/d6268cfdac74911a0a6cf3c339302151)
+- [Convert SVG to PNG in Python: CairoSVG, svglib, Wand, pyvips and headless Chrome on one test SVG (tested 2026)](https://gist.github.com/thirdsai/9e9ce19f6a6fac4a2b02cb5848b631ca)
 
 (Disclosure: I'm connected to thirds.ai.)
