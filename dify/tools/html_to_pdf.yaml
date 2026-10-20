@@ -1,0 +1,83 @@
+identity:
+  name: html_to_pdf
+  author: thirdsai
+  label:
+    en_US: HTML to PDF
+description:
+  human:
+    en_US: Turn an HTML document into a PDF file. CSS, web fonts, page breaks and print styles are supported.
+  llm: Turns a complete HTML document into a PDF file and returns the file. Use it when the user wants a PDF such as an invoice, report, quote or certificate. Pass the full HTML with inline CSS. Images must use public HTTPS URLs or data URLs.
+parameters:
+  - name: html
+    type: string
+    required: true
+    label:
+      en_US: HTML
+    human_description:
+      en_US: The full HTML document to render, up to 5 MB. Images and fonts must load from public HTTPS URLs or data URLs.
+    llm_description: The complete HTML document to render, including inline CSS.
+    form: llm
+  - name: file_name
+    type: string
+    required: false
+    label:
+      en_US: File name
+    human_description:
+      en_US: Name of the PDF file, for example invoice-1042. The .pdf extension is added for you.
+    llm_description: Optional file name for the PDF, without a path.
+    form: llm
+  - name: page_size
+    type: select
+    required: false
+    default: A4
+    label:
+      en_US: Page size
+    human_description:
+      en_US: Paper size of each page.
+    form: form
+    options:
+      - value: A4
+        label:
+          en_US: A4
+      - value: Letter
+        label:
+          en_US: Letter
+      - value: Legal
+        label:
+          en_US: Legal
+      - value: A3
+        label:
+          en_US: A3
+      - value: A5
+        label:
+          en_US: A5
+  - name: landscape
+    type: boolean
+    required: false
+    default: false
+    label:
+      en_US: Landscape
+    human_description:
+      en_US: Turn the pages sideways.
+    form: form
+  - name: margin
+    type: string
+    required: false
+    default: 0mm
+    label:
+      en_US: Margin
+    human_description:
+      en_US: Margin on every side, with a unit such as 12mm, 0.5in or 20px. CSS @page margins in the HTML also work.
+    form: form
+  - name: run_javascript
+    type: boolean
+    required: false
+    default: false
+    label:
+      en_US: Run JavaScript
+    human_description:
+      en_US: Run the page's scripts before rendering. Leave off for plain HTML and CSS.
+    form: form
+extra:
+  python:
+    source: tools/html_to_pdf.py
