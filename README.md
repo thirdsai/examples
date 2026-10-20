@@ -74,5 +74,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Print only one element of a page: why the popular print CSS gives blank pages or clipped rows, and a small helper that does not](https://gist.github.com/thirdsai/5799d2c1a240c006b01614aca1a74ab5)
 - [A4 pages in HTML that print 1:1: @page size, zero margins, border-box and screen-only gaps, measured with a marker, plus a check for overflowing sheets](https://gist.github.com/thirdsai/26b24a717cb86812cb63228414cb0345)
 - [FPDF and UTF-8 in PHP: what utf8_decode, iconv, mb_convert_encoding and tFPDF actually print, measured, plus a helper that never prints an empty line](https://gist.github.com/thirdsai/18c1903a04a5cc36bbcd6cebb091cf27)
+- [Serving a PDF from PHP: correct headers, inline or download, stray BOM and whitespace bytes, path traversal and Laravel, measured, plus a send_pdf helper](https://gist.github.com/thirdsai/682089dbd0149e22e88a23fb8ebd5815)
 
 (Disclosure: I'm connected to thirds.ai.)
