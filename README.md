@@ -87,5 +87,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Power Automate custom connector plus cloud flow: SharePoint or Dataverse rows to a PDF from one HTML template, with images, a repeating header, rows that never split and Page X of Y, saved to OneDrive or SharePoint](https://gist.github.com/thirdsai/14639aa030ad1e8a60cf61716994a876)
 - [Webflow CMS Open Graph images: one Node script with no packages that renders a 1200x630 share card for every collection item from one HTML design, skips unchanged items and writes the Image field through the Data API v2](https://gist.github.com/thirdsai/1fb6851e0633651d767804881c56b37a)
 - [Microsoft Forms response to PDF in Power Automate, without the file that won't open](https://gist.github.com/thirdsai/057cf63096921cc34e24abc57edffedd)
+- [Outlook email to PDF in SharePoint with Power Automate, inline images included](https://gist.github.com/thirdsai/43079ea2b671c1e46c66f5e486a735bf)
 
 (Disclosure: I'm connected to thirds.ai.)
