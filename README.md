@@ -72,5 +72,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Remove the date, title, URL and page count Chrome prints on every page, from the page's own CSS: zero @page margins plus repeating padding, measured](https://gist.github.com/thirdsai/be42af132ea72ad12fbdd600f749eaf9)
 - [Get a PDF from your API into the browser without corrupting it: fetch, axios and base64 traps, popup blocking and UTF-8 file names, measured in Chrome](https://gist.github.com/thirdsai/1bb161aeccdf052886e22263c7528d24)
 - [Print only one element of a page: why the popular print CSS gives blank pages or clipped rows, and a small helper that does not](https://gist.github.com/thirdsai/5799d2c1a240c006b01614aca1a74ab5)
+- [A4 pages in HTML that print 1:1: @page size, zero margins, border-box and screen-only gaps, measured with a marker, plus a check for overflowing sheets](https://gist.github.com/thirdsai/26b24a717cb86812cb63228414cb0345)
 
 (Disclosure: I'm connected to thirds.ai.)
