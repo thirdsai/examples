@@ -71,5 +71,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Capture a handwritten signature on a canvas in the browser and place it in a PDF agreement with an audit block. Node, no libraries. Not a sealed digital signature](https://gist.github.com/thirdsai/4c13e51a4748c8922d2e4c67475e142c)
 - [Remove the date, title, URL and page count Chrome prints on every page, from the page's own CSS: zero @page margins plus repeating padding, measured](https://gist.github.com/thirdsai/be42af132ea72ad12fbdd600f749eaf9)
 - [Get a PDF from your API into the browser without corrupting it: fetch, axios and base64 traps, popup blocking and UTF-8 file names, measured in Chrome](https://gist.github.com/thirdsai/1bb161aeccdf052886e22263c7528d24)
+- [Print only one element of a page: why the popular print CSS gives blank pages or clipped rows, and a small helper that does not](https://gist.github.com/thirdsai/5799d2c1a240c006b01614aca1a74ab5)
 
 (Disclosure: I'm connected to thirds.ai.)
