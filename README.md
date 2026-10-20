@@ -102,5 +102,6 @@ Questions or a broken example? Open an issue on this repo.
 - [pdfMake "Roboto-Regular.ttf not found in virtual file system": script order, bundles, and the 0.3 call that replaces pdfMake.vfs (tested)](https://gist.github.com/thirdsai/d6268cfdac74911a0a6cf3c339302151)
 - [Convert SVG to PNG in Python: CairoSVG, svglib, Wand, pyvips and headless Chrome on one test SVG (tested 2026)](https://gist.github.com/thirdsai/9e9ce19f6a6fac4a2b02cb5848b631ca)
 - [Plotly and folium to HTML and PNG in 2026: Kaleido 1.x needs Chrome, folium's _to_png downloads Firefox, and OpenStreetMap blocks its tiles (tested)](https://gist.github.com/thirdsai/b74119d1b61dcfd67db07c7ca93b4448)
+- [Nodemailer PDF attachment arrives damaged or empty: the six ways it goes wrong, measured against a local SMTP server](https://gist.github.com/thirdsai/fa73dd8457415cdf2539a5d07eebdd23)
 
 (Disclosure: I'm connected to thirds.ai.)
