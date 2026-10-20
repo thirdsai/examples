@@ -68,5 +68,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Puppeteer: wait until a page that loads its data after the load event is really finished before page.pdf(), plus the same page as a PDF from an API](https://gist.github.com/thirdsai/d6613eb3603275b041b9cb3e4ccc13bc)
 - [Puppeteer headerTemplate and footerTemplate: seven traps measured (scripts, missing header, tiny text, page CSS, zero margins, flexbox, images) and a helper that avoids them](https://gist.github.com/thirdsai/d7340585ce2697430d54510d51c709e2)
 - [A weekly PDF report from Grafana OSS without Enterprise reporting or the image renderer: dashboard queries over the HTTP API, drawn as HTML and SVG. Tested on a local Grafana with test data](https://gist.github.com/thirdsai/e7a660fe87ed3c752f7fc7f4c77ea024)
+- [Capture a handwritten signature on a canvas in the browser and place it in a PDF agreement with an audit block. Node, no libraries. Not a sealed digital signature](https://gist.github.com/thirdsai/4c13e51a4748c8922d2e4c67475e142c)
 
 (Disclosure: I'm connected to thirds.ai.)
