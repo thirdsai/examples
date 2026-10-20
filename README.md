@@ -95,5 +95,6 @@ Questions or a broken example? Open an issue on this repo.
 - [wkhtmltopdf 0.12.6 "Warning: Blocked access to file": the flag, where it goes, and the safer --allow, measured](https://gist.github.com/thirdsai/172afdaa5fbd99482dab9e7af790094b)
 - [Google Fonts in wkhtmltopdf: which ways of loading the font work, and the silent woff2 fallback, measured](https://gist.github.com/thirdsai/e4b70049feafabe9956a384446e28724)
 - [WeasyPrint on Windows: "OSError: cannot load library 'gobject-2.0': error 0x7e", what it means and how to check before you import](https://gist.github.com/thirdsai/fc34f22d7f12e3a3ea9cc1b41a8ed5e2)
+- [html2canvas: leave elements out of the screenshot, four ways measured, and why the cloned element came out blank](https://gist.github.com/thirdsai/1125e1241e32917fd58bf21625978741)
 
 (Disclosure: I'm connected to thirds.ai.)
