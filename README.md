@@ -20,6 +20,7 @@ If an invoice or report looks right in the browser but splits a table row across
 | [`ad-sizes-from-csv/`](ad-sizes-from-csv/) | One ad design, one row per product, a ZIP of PNGs in three sizes each | Python 3, standard library |
 | [`n8n/sheets-certificate-email/`](n8n/sheets-certificate-email/) | New Google Sheets row to certificate PDF to Gmail | n8n Cloud or self-hosted (HTTP Request nodes) |
 | [`make/donation-receipt/`](make/donation-receipt/) | Stripe gift to branded donation receipt PDF | Make (HTTP app) |
+| [`dify/`](dify/) | Dify tool plugin: HTML to PDF and HTML to image tools for workflows and agents | Dify 1.0+ (Marketplace or .difypkg upload) |
 
 ## Notes
 
