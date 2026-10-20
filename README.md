@@ -103,5 +103,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Convert SVG to PNG in Python: CairoSVG, svglib, Wand, pyvips and headless Chrome on one test SVG (tested 2026)](https://gist.github.com/thirdsai/9e9ce19f6a6fac4a2b02cb5848b631ca)
 - [Plotly and folium to HTML and PNG in 2026: Kaleido 1.x needs Chrome, folium's _to_png downloads Firefox, and OpenStreetMap blocks its tiles (tested)](https://gist.github.com/thirdsai/b74119d1b61dcfd67db07c7ca93b4448)
 - [Nodemailer PDF attachment arrives damaged or empty: the six ways it goes wrong, measured against a local SMTP server](https://gist.github.com/thirdsai/fa73dd8457415cdf2539a5d07eebdd23)
+- [Fill an existing PDF form in Node.js with pdf-lib: wrong field names, "WinAnsi cannot encode", invisible values and a flatten bug (tested 2026)](https://gist.github.com/thirdsai/75dd204149144fbe7fee5b9e2424e012)
 
 (Disclosure: I'm connected to thirds.ai.)
