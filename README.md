@@ -118,5 +118,6 @@ Questions or a broken example? Open an issue on this repo.
 - [wkhtmltopdf from C# with an HTML string: the stdout deadlock, UTF-8 mojibake and relative images with stdin, 12 cases on .NET 10](https://gist.github.com/thirdsai/de6bdebf2a532b45440a3e7434b81b7d)
 - [PDFKit or wicked_pdf hanging in development: wkhtmltopdf calls back into a one request at a time server; reproduced in Ruby with the fixes](https://gist.github.com/thirdsai/7903231b5a194650e0f050e62e700465)
 - [Shopify orders export CSV to one PDF of packing slips, one per order, line items grouped, tick boxes for the packer, Python standard library only.](https://gist.github.com/thirdsai/ee92adbbc7e109e563ff8f99eb38c7c8)
+- [Zapier recipe: a landscape PDF certificate for every new Sheets row or form response, emailed automatically, safe on Zapier replays.](https://gist.github.com/thirdsai/eec0abe0807e251766bd726f596798a9)
 
 (Disclosure: I'm connected to thirds.ai.)
