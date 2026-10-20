@@ -104,5 +104,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Plotly and folium to HTML and PNG in 2026: Kaleido 1.x needs Chrome, folium's _to_png downloads Firefox, and OpenStreetMap blocks its tiles (tested)](https://gist.github.com/thirdsai/b74119d1b61dcfd67db07c7ca93b4448)
 - [Nodemailer PDF attachment arrives damaged or empty: the six ways it goes wrong, measured against a local SMTP server](https://gist.github.com/thirdsai/fa73dd8457415cdf2539a5d07eebdd23)
 - [Fill an existing PDF form in Node.js with pdf-lib: wrong field names, "WinAnsi cannot encode", invisible values and a flatten bug (tested 2026)](https://gist.github.com/thirdsai/75dd204149144fbe7fee5b9e2424e012)
+- [Name badges from a CSV or Excel export as one print ready A4 or Letter PDF: auto grid, names that shrink or wrap, ribbons, cut marks, Python standard library only](https://gist.github.com/thirdsai/41a8a30ec9396812d54fc7eaf9597c63)
 
 (Disclosure: I'm connected to thirds.ai.)
