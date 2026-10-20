@@ -84,5 +84,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Resize photos into social cards with sharp in Node: EXIF rotation, GPS leaks, lost subjects, black bars and transparency, measured, plus a helper](https://gist.github.com/thirdsai/e3918e662f37ce8f81138db1c784bb18)
 - [Google Forms Apps Script: a tidy PDF of every response, saved to Drive and emailed to you or the respondent, every question type handled](https://gist.github.com/thirdsai/877f157e6528cddca6ea16415013dd9f)
 - [Merge PNG, JPEG, WebP or GIF images into one PDF, one image per page, large ones scaled down to fit, in Python with only the standard library (no Pillow or ImageMagick)](https://gist.github.com/thirdsai/7335ce60b0e06e29b4b42f357f035703)
+- [Power Automate custom connector plus cloud flow: SharePoint or Dataverse rows to a PDF from one HTML template, with images, a repeating header, rows that never split and Page X of Y, saved to OneDrive or SharePoint](https://gist.github.com/thirdsai/14639aa030ad1e8a60cf61716994a876)
 
 (Disclosure: I'm connected to thirds.ai.)
