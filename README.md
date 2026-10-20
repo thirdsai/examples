@@ -82,5 +82,6 @@ Questions or a broken example? Open an issue on this repo.
 - [XLSX to PDF with headless LibreOffice: parallel runs, silent failures, a running instance, CSV delimiters and cut up sheets, measured, plus a Python wrapper](https://gist.github.com/thirdsai/ffa285aabba9a43b3ede75b3fdf7efc2)
 - [Fonts in Chrome PDFs on Linux and in containers: which font packages cover which scripts, lang and Han glyphs, line breaks, measured, plus a fontconfig preflight](https://gist.github.com/thirdsai/35072ca775127b143e083efe9f6c776f)
 - [Resize photos into social cards with sharp in Node: EXIF rotation, GPS leaks, lost subjects, black bars and transparency, measured, plus a helper](https://gist.github.com/thirdsai/e3918e662f37ce8f81138db1c784bb18)
+- [Google Forms Apps Script: a tidy PDF of every response, saved to Drive and emailed to you or the respondent, every question type handled](https://gist.github.com/thirdsai/877f157e6528cddca6ea16415013dd9f)
 
 (Disclosure: I'm connected to thirds.ai.)
