@@ -78,5 +78,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Text to image in C# on Linux: why System.Drawing fails, SkiaSharp's font and native asset traps, measured, plus a wrapping helper with font fallback](https://gist.github.com/thirdsai/7d589e9efb1fe17d4b42fc71c67d3c29)
 - [Returning a PDF from ASP.NET Core on .NET 10: the answers that return JSON, empty files or 500s, measured, plus a PdfResults helper for inline or download](https://gist.github.com/thirdsai/1a620193e5831861b1d33d5599f4aba2)
 - [Many matplotlib figures in one PDF with PdfPages: page sizes, Type 3 fonts, memory, missing glyphs and reproducible bytes, measured, plus a helper](https://gist.github.com/thirdsai/a20ffdf50d2e67ece53324e1b0e6a768)
+- [Returning a generated image from FastAPI or Flask: empty bodies, JSON errors, RGBA to JPEG and a blocked event loop, measured, plus an ETag helper](https://gist.github.com/thirdsai/4f2860236f636e2e3dafab0943531f95)
 
 (Disclosure: I'm connected to thirds.ai.)
