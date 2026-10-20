@@ -81,5 +81,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Returning a generated image from FastAPI or Flask: empty bodies, JSON errors, RGBA to JPEG and a blocked event loop, measured, plus an ETag helper](https://gist.github.com/thirdsai/4f2860236f636e2e3dafab0943531f95)
 - [XLSX to PDF with headless LibreOffice: parallel runs, silent failures, a running instance, CSV delimiters and cut up sheets, measured, plus a Python wrapper](https://gist.github.com/thirdsai/ffa285aabba9a43b3ede75b3fdf7efc2)
 - [Fonts in Chrome PDFs on Linux and in containers: which font packages cover which scripts, lang and Han glyphs, line breaks, measured, plus a fontconfig preflight](https://gist.github.com/thirdsai/35072ca775127b143e083efe9f6c776f)
+- [Resize photos into social cards with sharp in Node: EXIF rotation, GPS leaks, lost subjects, black bars and transparency, measured, plus a helper](https://gist.github.com/thirdsai/e3918e662f37ce8f81138db1c784bb18)
 
 (Disclosure: I'm connected to thirds.ai.)
