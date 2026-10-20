@@ -64,5 +64,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Bubble API Connector recipe: multi page quote PDFs where repeating group rows never split, saved as a Bubble file, key kept server side](https://gist.github.com/thirdsai/0ee495b1ad0d94f7584f3c1b07bc7122)
 - [Invoice PDFs from an async FastAPI route, no WeasyPrint or wkhtmltopdf: cents totals, escaped data, repeating table header, Page X of Y, safe retries](https://gist.github.com/thirdsai/d560689abac2d46ca46009d7194e6729)
 - [Airtable scripting extension: a 1200x630 social card PNG for every record, saved to an attachment field, only changed records rendered again](https://gist.github.com/thirdsai/49b32c331a6b533864199e7cf0b232c7)
+- [Puppeteer in Docker: fix "No usable sandbox!" without --no-sandbox, using a seccomp profile and a non-root user, or ship no browser at all](https://gist.github.com/thirdsai/fdf7a8eb2d305772bfe8389fcb9dd73c)
 
 (Disclosure: I'm connected to thirds.ai.)
