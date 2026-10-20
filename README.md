@@ -112,5 +112,6 @@ Questions or a broken example? Open an issue on this repo.
 - [docx to PDF from Node: LibreOffice vs mammoth vs docx-preview on one Word file, headers, page numbers, images and page breaks checked](https://gist.github.com/thirdsai/be16152afa19878556a561edc4a2f680)
 - [A custom header and footer on every printed page in Chrome: thead and tfoot, position fixed, @page margin boxes, running elements, measured](https://gist.github.com/thirdsai/eef1d8ede816380e91dd5839050b652f)
 - [Puppeteer PDF that opens blank or corrupt: page.pdf() now returns a Uint8Array, Express 4 res.send turns it into JSON, and res.text() on the client, measured](https://gist.github.com/thirdsai/bd154bae4f2fcf0e469a9021bea71d20)
+- [wkhtmltopdf repeated thead overlapping rows: it happens when one row is taller than the page; 10 cases on 0.12.6.1 and the fixes that work](https://gist.github.com/thirdsai/47df8988d393a250ccdf454b303acd9c)
 
 (Disclosure: I'm connected to thirds.ai.)
