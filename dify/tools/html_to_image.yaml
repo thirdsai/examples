@@ -1,0 +1,90 @@
+identity:
+  name: html_to_image
+  author: thirdsai
+  label:
+    en_US: HTML to image
+description:
+  human:
+    en_US: Turn an HTML document into a PNG, JPEG or WebP image at the size you choose.
+  llm: Turns a complete HTML document into an image file (PNG, JPEG or WebP) and returns the file. Use it for social cards, banners, badges or any layout the user wants as a picture. Pass the full HTML with inline CSS, sized to the requested width and height.
+parameters:
+  - name: html
+    type: string
+    required: true
+    label:
+      en_US: HTML
+    human_description:
+      en_US: The full HTML document to render, up to 5 MB. Images and fonts must load from public HTTPS URLs or data URLs.
+    llm_description: The complete HTML document to render, including inline CSS, laid out for the chosen width and height.
+    form: llm
+  - name: file_name
+    type: string
+    required: false
+    label:
+      en_US: File name
+    human_description:
+      en_US: Name of the image file, for example share-card. The extension is added for you.
+    llm_description: Optional file name for the image, without a path.
+    form: llm
+  - name: format
+    type: select
+    required: false
+    default: png
+    label:
+      en_US: Format
+    human_description:
+      en_US: Image format.
+    form: form
+    options:
+      - value: png
+        label:
+          en_US: PNG
+      - value: jpeg
+        label:
+          en_US: JPEG
+      - value: webp
+        label:
+          en_US: WebP
+  - name: width
+    type: number
+    required: false
+    default: 1200
+    min: 320
+    max: 7680
+    label:
+      en_US: Width (px)
+    human_description:
+      en_US: Image width in pixels, from 320 to 7680.
+    form: form
+  - name: height
+    type: number
+    required: false
+    default: 630
+    min: 200
+    max: 4320
+    label:
+      en_US: Height (px)
+    human_description:
+      en_US: Image height in pixels, from 200 to 4320.
+    form: form
+  - name: transparent
+    type: boolean
+    required: false
+    default: false
+    label:
+      en_US: Transparent background
+    human_description:
+      en_US: Keep the page background transparent. Use it with PNG.
+    form: form
+  - name: run_javascript
+    type: boolean
+    required: false
+    default: false
+    label:
+      en_US: Run JavaScript
+    human_description:
+      en_US: Run the page's scripts before rendering. Turn on for web fonts that load through a script.
+    form: form
+extra:
+  python:
+    source: tools/html_to_image.py
