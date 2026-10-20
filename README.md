@@ -67,5 +67,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Puppeteer in Docker: fix "No usable sandbox!" without --no-sandbox, using a seccomp profile and a non-root user, or ship no browser at all](https://gist.github.com/thirdsai/fdf7a8eb2d305772bfe8389fcb9dd73c)
 - [Puppeteer: wait until a page that loads its data after the load event is really finished before page.pdf(), plus the same page as a PDF from an API](https://gist.github.com/thirdsai/d6613eb3603275b041b9cb3e4ccc13bc)
 - [Puppeteer headerTemplate and footerTemplate: seven traps measured (scripts, missing header, tiny text, page CSS, zero margins, flexbox, images) and a helper that avoids them](https://gist.github.com/thirdsai/d7340585ce2697430d54510d51c709e2)
+- [A weekly PDF report from Grafana OSS without Enterprise reporting or the image renderer: dashboard queries over the HTTP API, drawn as HTML and SVG. Tested on a local Grafana with test data](https://gist.github.com/thirdsai/e7a660fe87ed3c752f7fc7f4c77ea024)
 
 (Disclosure: I'm connected to thirds.ai.)
