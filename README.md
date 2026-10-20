@@ -88,5 +88,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Webflow CMS Open Graph images: one Node script with no packages that renders a 1200x630 share card for every collection item from one HTML design, skips unchanged items and writes the Image field through the Data API v2](https://gist.github.com/thirdsai/1fb6851e0633651d767804881c56b37a)
 - [Microsoft Forms response to PDF in Power Automate, without the file that won't open](https://gist.github.com/thirdsai/057cf63096921cc34e24abc57edffedd)
 - [Outlook email to PDF in SharePoint with Power Automate, inline images included](https://gist.github.com/thirdsai/43079ea2b671c1e46c66f5e486a735bf)
+- [PDF file content in Power Automate: base64, base64ToBinary, and why the attachment is corrupt or blank](https://gist.github.com/thirdsai/bf68e8e1b45ed859b381a4342806b3dc)
 
 (Disclosure: I'm connected to thirds.ai.)
