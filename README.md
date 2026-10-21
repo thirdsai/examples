@@ -123,5 +123,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Bubble recipe: a 1200x630 Open Graph share image for every Thing on a dynamic page, made in a backend workflow, stored in Bubble, safe on retries.](https://gist.github.com/thirdsai/ccd52db9ab1bfb3eb417330e7b14f96f)
 - [Google Sheets Apps Script: 4x6 shipping labels for every new order row in one PDF, one per page, saved to Drive, safe to rerun.](https://gist.github.com/thirdsai/2c5c6558a54adeb2ecab7e5cf3231805)
 - [Airtable automation script: a certificate of completion PDF attached to the record when it matches a condition, with a printed certificate ID, safe on retries.](https://gist.github.com/thirdsai/aa43352d70e89edf76731acae3e34f43)
+- [n8n workflow: a 1200x630 Open Graph share image for every new blog post from any RSS feed, cleaned and escaped titles, safe to rerun.](https://gist.github.com/thirdsai/6121bd5440422fd3a032dc03fc45787f)
 
 (Disclosure: I'm connected to thirds.ai.)
