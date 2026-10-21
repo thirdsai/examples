@@ -121,5 +121,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Zapier recipe: a landscape PDF certificate for every new Sheets row or form response, emailed automatically, safe on Zapier replays.](https://gist.github.com/thirdsai/eec0abe0807e251766bd726f596798a9)
 - [Google Sheets Apps Script: a PDF payslip for every employee row, any number of earnings and deductions, totals in whole cents, saved to Drive and emailed, safe to rerun.](https://gist.github.com/thirdsai/57e7894c14acb7951affc5202ffe4a60)
 - [Bubble recipe: a 1200x630 Open Graph share image for every Thing on a dynamic page, made in a backend workflow, stored in Bubble, safe on retries.](https://gist.github.com/thirdsai/ccd52db9ab1bfb3eb417330e7b14f96f)
+- [Google Sheets Apps Script: 4x6 shipping labels for every new order row in one PDF, one per page, saved to Drive, safe to rerun.](https://gist.github.com/thirdsai/2c5c6558a54adeb2ecab7e5cf3231805)
 
 (Disclosure: I'm connected to thirds.ai.)
