@@ -119,5 +119,6 @@ Questions or a broken example? Open an issue on this repo.
 - [PDFKit or wicked_pdf hanging in development: wkhtmltopdf calls back into a one request at a time server; reproduced in Ruby with the fixes](https://gist.github.com/thirdsai/7903231b5a194650e0f050e62e700465)
 - [Shopify orders export CSV to one PDF of packing slips, one per order, line items grouped, tick boxes for the packer, Python standard library only.](https://gist.github.com/thirdsai/ee92adbbc7e109e563ff8f99eb38c7c8)
 - [Zapier recipe: a landscape PDF certificate for every new Sheets row or form response, emailed automatically, safe on Zapier replays.](https://gist.github.com/thirdsai/eec0abe0807e251766bd726f596798a9)
+- [Google Sheets Apps Script: a PDF payslip for every employee row, any number of earnings and deductions, totals in whole cents, saved to Drive and emailed, safe to rerun.](https://gist.github.com/thirdsai/57e7894c14acb7951affc5202ffe4a60)
 
 (Disclosure: I'm connected to thirds.ai.)
