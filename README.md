@@ -129,5 +129,6 @@ Questions or a broken example? Open an issue on this repo.
 - [n8n workflow: POST an order as JSON, get the invoice PDF back in the same response. Totals in whole cents, per line tax, clear 400s for bad input, secret header on the webhook, safe on retries.](https://gist.github.com/thirdsai/7e32a5fb4d8815c1833cf498faccfbe8)
 - [Google Sheets Apps Script: your Products tab becomes a print ready PDF catalog or price list, grouped by category, with photos, a cover and page numbers, saved to Drive.](https://gist.github.com/thirdsai/64f2d9c33a2d100a7d3685896f082179)
 - [Dify recipe: chart data from an LLM becomes a real 1200x630 PNG in the chat answer instead of echarts code. One Python Code node, bar or line, safe on bad data.](https://gist.github.com/thirdsai/4967635c1259ad2bbda004317f96bd15)
+- [n8n workflow: POST a learner's name and course, get a landscape A4 certificate of completion PDF back in the same response, with a stable certificate number, clear 400s and a secret header on the webhook, safe on retries.](https://gist.github.com/thirdsai/9341f42bf62c58fe922c5a7f7702d171)
 
 (Disclosure: I'm connected to thirds.ai.)
