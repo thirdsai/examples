@@ -137,5 +137,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Bubble API Connector: a landscape certificate of completion PDF with a printed certificate ID, saved into your app from a backend workflow, safe on double clicks.](https://gist.github.com/thirdsai/1ed169105ec728214f7d8742e49feb64)
 - [Airtable automation script: a PDF payment receipt with a receipt number for every paid record, attached to the record, never made twice.](https://gist.github.com/thirdsai/4bb0f2c62cde516cf4a053aa39a34c13)
 - [Zapier Code step: an A4 invoice PDF with real line items, tax and a due date for every order or form, emailed to the customer, safe on replays.](https://gist.github.com/thirdsai/95537d601c3e6ce5105dd8db56885dfe)
+- [Airtable automation script: a 4x6 shipping label PDF for every order that is ready to ship, attached to the record, never made twice.](https://gist.github.com/thirdsai/e3e37ea248f468f0743f4332d1838fe8)
 
 (Disclosure: I'm connected to thirds.ai.)
