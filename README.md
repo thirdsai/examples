@@ -133,5 +133,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Zapier: one Google Sheets row becomes square, story and landscape PNG ads (1080x1080, 1080x1920, 1200x628) with one Code step and three webhooks, safe on replays.](https://gist.github.com/thirdsai/4f00066850c66d0a24e0f6736b79ecb9)
 - [n8n workflow: POST one ad brief, get square, story and landscape PNG ads (1080x1080, 1080x1920, 1200x628) back as links, rendered at the same time, safe on retries.](https://gist.github.com/thirdsai/ee1ef85f99020155df1d2cc5ea26a7f6)
 - [Google Sheets Apps Script: a PDF ticket with a check in code for every attendee row, emailed to them and saved to Drive, never sent twice.](https://gist.github.com/thirdsai/2619b4b09131628f1cd6c06afed70953)
+- [Zapier Code step: a 1200x630 Open Graph share image for every new blog post from RSS, WordPress, Webflow or Ghost, cleaned titles, safe on replays.](https://gist.github.com/thirdsai/296d7ee1262201a6e99c1e953f6e1d8c)
 
 (Disclosure: I'm connected to thirds.ai.)
