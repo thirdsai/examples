@@ -135,5 +135,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Google Sheets Apps Script: a PDF ticket with a check in code for every attendee row, emailed to them and saved to Drive, never sent twice.](https://gist.github.com/thirdsai/2619b4b09131628f1cd6c06afed70953)
 - [Zapier Code step: a 1200x630 Open Graph share image for every new blog post from RSS, WordPress, Webflow or Ghost, cleaned titles, safe on replays.](https://gist.github.com/thirdsai/296d7ee1262201a6e99c1e953f6e1d8c)
 - [Bubble API Connector: a landscape certificate of completion PDF with a printed certificate ID, saved into your app from a backend workflow, safe on double clicks.](https://gist.github.com/thirdsai/1ed169105ec728214f7d8742e49feb64)
+- [Airtable automation script: a PDF payment receipt with a receipt number for every paid record, attached to the record, never made twice.](https://gist.github.com/thirdsai/4bb0f2c62cde516cf4a053aa39a34c13)
 
 (Disclosure: I'm connected to thirds.ai.)
