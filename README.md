@@ -140,5 +140,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Airtable automation script: a 4x6 shipping label PDF for every order that is ready to ship, attached to the record, never made twice.](https://gist.github.com/thirdsai/e3e37ea248f468f0743f4332d1838fe8)
 - [Google Sheets Apps Script: a 1200x630 Open Graph share image for every post in your sheet, saved to Drive with the link written back, never made twice.](https://gist.github.com/thirdsai/43423a37bf11b2a239c3768de405abff)
 - [Zapier Code step: a 4x6 inch (or A6) shipping label PDF for every new order, big postcode, long addresses shrink to fit, safe on replays.](https://gist.github.com/thirdsai/e2f4bd6f56d09a40ec6c5ee4da398c9d)
+- [n8n workflow: POST a payment, get an A4 PDF receipt back with line items, the right currency and a stable receipt number, safe on Stripe retries.](https://gist.github.com/thirdsai/a3bfae7a4ee42b3ad8bfd072fadfa192)
 
 (Disclosure: I'm connected to thirds.ai.)
