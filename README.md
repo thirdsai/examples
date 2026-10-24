@@ -141,5 +141,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Google Sheets Apps Script: a 1200x630 Open Graph share image for every post in your sheet, saved to Drive with the link written back, never made twice.](https://gist.github.com/thirdsai/43423a37bf11b2a239c3768de405abff)
 - [Zapier Code step: a 4x6 inch (or A6) shipping label PDF for every new order, big postcode, long addresses shrink to fit, safe on replays.](https://gist.github.com/thirdsai/e2f4bd6f56d09a40ec6c5ee4da398c9d)
 - [n8n workflow: POST a payment, get an A4 PDF receipt back with line items, the right currency and a stable receipt number, safe on Stripe retries.](https://gist.github.com/thirdsai/a3bfae7a4ee42b3ad8bfd072fadfa192)
+- [n8n workflow: POST a Shopify or WooCommerce order, get a 4x6 inch (or A6) shipping label PDF back, big postcode, long addresses shrink to fit, safe on retries.](https://gist.github.com/thirdsai/9ad86fa142f0161f04ac973ef906437c)
 
 (Disclosure: I'm connected to thirds.ai.)
