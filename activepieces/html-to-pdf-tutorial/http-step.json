@@ -1,0 +1,42 @@
+{
+  "name": "step_2",
+  "valid": false,
+  "displayName": "Render PDF (thirds.ai)",
+  "lastUpdatedDate": "2026-10-22T00:00:00.000Z",
+  "type": "PIECE",
+  "settings": {
+    "pieceName": "@activepieces/piece-http",
+    "pieceVersion": "~0.13.0",
+    "actionName": "send_request",
+    "input": {
+      "method": "POST",
+      "url": "https://thirds.ai/v1/pdf",
+      "headers": {
+        "Idempotency-Key": "{{step_1['output']['idempotency_key']}}"
+      },
+      "queryParams": {},
+      "authType": "BEARER_TOKEN",
+      "authFields": {
+        "token": "PASTE_YOUR_THIRDS_API_KEY"
+      },
+      "body_type": "json",
+      "body": {
+        "data": "{{step_1['output']['body']}}"
+      },
+      "response_is_binary": false,
+      "use_proxy": false,
+      "timeout": 120,
+      "followRedirects": false,
+      "failureMode": "retry_5xx"
+    },
+    "propertySettings": {},
+    "errorHandlingOptions": {
+      "continueOnFailure": {
+        "value": false
+      },
+      "retryOnFailure": {
+        "value": false
+      }
+    }
+  }
+}

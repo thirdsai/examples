@@ -20,6 +20,7 @@ If an invoice or report looks right in the browser but splits a table row across
 | [`ad-sizes-from-csv/`](ad-sizes-from-csv/) | One ad design, one row per product, a ZIP of PNGs in three sizes each | Python 3, standard library |
 | [`n8n/sheets-certificate-email/`](n8n/sheets-certificate-email/) | New Google Sheets row to certificate PDF to Gmail | n8n Cloud or self-hosted (HTTP Request nodes) |
 | [`make/donation-receipt/`](make/donation-receipt/) | Stripe gift to branded donation receipt PDF | Make (HTTP app) |
+| [`activepieces/html-to-pdf-tutorial/`](activepieces/html-to-pdf-tutorial/) | Tutorial: rows to a multi page A4 report PDF with a header row on every page, clean page breaks and margins set once | Activepieces (Code and HTTP steps) |
 | [`dify/`](dify/) | Dify tool plugin: HTML to PDF and HTML to image tools for workflows and agents | Dify 1.0+ (Marketplace or .difypkg upload) |
 
 ## Notes
@@ -142,5 +143,6 @@ Questions or a broken example? Open an issue on this repo.
 - [Zapier Code step: a 4x6 inch (or A6) shipping label PDF for every new order, big postcode, long addresses shrink to fit, safe on replays.](https://gist.github.com/thirdsai/e2f4bd6f56d09a40ec6c5ee4da398c9d)
 - [n8n workflow: POST a payment, get an A4 PDF receipt back with line items, the right currency and a stable receipt number, safe on Stripe retries.](https://gist.github.com/thirdsai/a3bfae7a4ee42b3ad8bfd072fadfa192)
 - [n8n workflow: POST a Shopify or WooCommerce order, get a 4x6 inch (or A6) shipping label PDF back, big postcode, long addresses shrink to fit, safe on retries.](https://gist.github.com/thirdsai/9ad86fa142f0161f04ac973ef906437c)
+- [Activepieces tutorial: HTML templates to PDF with the HTTP step, a table header row on every page, clean page breaks and margins set once](https://github.com/thirdsai/examples/tree/main/activepieces/html-to-pdf-tutorial)
 
 (Disclosure: I'm connected to thirds.ai.)
