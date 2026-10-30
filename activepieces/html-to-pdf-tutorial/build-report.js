@@ -1,7 +1,7 @@
 // Activepieces Code step "Build report": turns a list of rows into print ready HTML for the HTTP step.
 // Inputs: title, company, currency (3 letter code), notes, rows (a list or JSON text of
 //   { order, date, customer, item, qty, price } objects, for example from Google Sheets "Get Rows").
-// Output: body (the JSON body for POST /v1/pdf), idempotency_key, file_name, page_count_hint.
+// Output: body (the JSON body for POST /v1/pdf), idempotency_key, file_name.
 export const code = async (inputs) => {
   const clean = (v) => String(v == null ? '' : v).trim();
   const esc = (v) => clean(v).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
